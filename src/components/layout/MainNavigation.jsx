@@ -22,4 +22,4 @@ export default function MainNavigation() {
             </ul>
         </nav>
     </header>
-}
+} 

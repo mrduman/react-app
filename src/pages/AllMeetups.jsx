@@ -20,7 +20,6 @@ const DUMMY_DATA = [
             'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
     },
 ];
-eate
 export default function AllMeetupsPage() {
 
     return (
