@@ -1,11 +1,11 @@
-import NewMeetupForm from "../components/meetups/NewMeetupForm"
+import NewMeetupForm from "../components/meetups/NewMeetupForm";
 
 export default function NewMeetup() {
 
     function addMeetupHandler(meetupData) {
 
         fetch(
-            "https://react-getting-started-dbcc7-default-rtdb.firebaseio.com/meetup.json",
+            "https://react-getting-started-dbcc7-default-rtdb.firebaseio.com/meetups.json",
             {
                 method: "POST",
                 body: JSON.stringify(meetupData),
@@ -13,7 +13,9 @@ export default function NewMeetup() {
                     "Content-Type": "application/json"
                 }
             }
-        )
+        ).then(() => {
+            document.location.href = "/";
+        });
     }
 
     return <section>
