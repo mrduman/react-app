@@ -26,8 +26,6 @@ export default function NewMeetupForm(props) {
         props.onAddMeetup(meetupData);
     }
 
-
-
     return (
         <Card>
             <form className={classes.form} onSubmit={submitHandler}>
